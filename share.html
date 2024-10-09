@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Dissolving Localities Share Page</title>
+  </head>
+  
+  <body style="background-color:#F0EDE5" >
+    <!-- SMARTADDON BEGIN -->
+<script type="text/javascript">
+function getParameterByName(name)
+      {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(window.location.search);
+        if(results == null)
+          return "";
+        else
+          return decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+		
+(function() {
+var s=document.createElement('script');s.type='text/javascript';s.async = true;
+s.src='http://s1.smartaddon.com/share_addon.js';
+var j =document.getElementsByTagName('script')[0];j.parentNode.insertBefore(s,j);
+})();
+</script>
+
+<div id="sa_share_bar">
+<script>
+	    var link_text = getParameterByName("replay");
+
+	var link = "http://sveder.com/freshpaint/dissolve.html?replay=" + link_text;
+	var div = document.getElementByID("sa_share_bar");
+	div.innerHTML = '<a id="sa_share_facebook" layout="icon" size="24" url="' + link + '"></a>';
+	div.innerHTML += '<a id="sa_share_twitter" layout="icon" size="24" url="' + link + '"></a>';
+	div.innerHTML += '<a id="sa_share_googleplus" layout="icon" size="24" url="' + link + '"></a>';
+
+		div.innerHTML += '<a id="sa_share_email" layout="icon" size="24" url="' + link + '"></a>';
+</script?
+</div>
+<!-- SMARTADDON END -->
+  </body>
+</html>
